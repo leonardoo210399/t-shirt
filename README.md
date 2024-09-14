@@ -1,6 +1,4 @@
-Here’s the updated version with relevant placeholders filled in for your project, named "T-SHIRT.GIT":
 
-```markdown
 <p align="center">
   <img src="LLM" width="60%" alt="T-SHIRT.GIT-logo">
 </p>
@@ -130,7 +128,6 @@ T-SHIRT.GIT is a web-based platform that allows users to design custom T-shirts 
         ├── package.json
         └── routes
             └── dalle.routes.js
-```
 
 ---
 
