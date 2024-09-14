@@ -130,24 +130,110 @@ T-SHIRT.GIT is a web-based platform that allows users to design custom T-shirts 
             └── dalle.routes.js
 ```
 ---
-
 ## 🧩 Modules
 
 <details closed><summary>client</summary>
 
 | File | Summary |
 | --- | --- |
-| [index.html](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/index.html) | Main HTML structure of the client-side. |
-| [postcss.config.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/postcss.config.js) | PostCSS setup for CSS processing. |
-| [vite.config.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/vite.config.js) | Vite configuration for fast development. |
-| [package.json](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/package.json) | Client dependencies and scripts. |
-| [.eslintrc.cjs](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/.eslintrc.cjs) | Linter configuration for consistent coding style. |
-| [tailwind.config.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/tailwind.config.js) | Tailwind CSS custom configuration. |
-| [package-lock.json](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/package-lock.json) | Lock file for dependencies. |
+| [index.html](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/index.html) | Main HTML structure for the client-side. Contains the root element where React will mount the application. |
+| [postcss.config.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/postcss.config.js) | Configuration for PostCSS, which helps process Tailwind CSS and other styles. |
+| [vite.config.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/vite.config.js) | Vite configuration file for fast development and optimized builds. |
+| [package.json](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/package.json) | Lists the client-side dependencies and npm scripts for the frontend. |
+| [.eslintrc.cjs](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/.eslintrc.cjs) | Configuration for ESLint, enforcing code quality and consistent style. |
+| [tailwind.config.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/tailwind.config.js) | Tailwind CSS configuration file for customizing design system styles. |
+| [package-lock.json](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/package-lock.json) | Dependency lock file for ensuring consistent package versions. |
 
 </details>
 
-... (The rest follows the same pattern for other modules)
+<details closed><summary>client.public</summary>
+
+| File | Summary |
+| --- | --- |
+| [shirt_baked.glb](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/public/shirt_baked.glb) | 3D model file used to render the customizable T-shirt in the 3D view. |
+
+</details>
+
+<details closed><summary>client.src</summary>
+
+| File | Summary |
+| --- | --- |
+| [App.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/App.jsx) | The main application component that houses all the logic for T-shirt customization. |
+| [index.css](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/index.css) | Main CSS file containing global styles, imported by the application. |
+| [main.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/main.jsx) | Entry point for the React application, rendering `App.jsx` into the DOM. |
+
+</details>
+
+<details closed><summary>client.src.store</summary>
+
+| File | Summary |
+| --- | --- |
+| [index.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/store/index.js) | Redux store configuration for managing global state, including the customization features and settings. |
+
+</details>
+
+<details closed><summary>client.src.pages</summary>
+
+| File | Summary |
+| --- | --- |
+| [Customizer.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/pages/Customizer.jsx) | Page responsible for rendering the customization interface, allowing users to select colors, upload images, and generate designs with AI. |
+| [Home.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/pages/Home.jsx) | The homepage of the application, presenting an introduction to the T-shirt customization process. |
+
+</details>
+
+<details closed><summary>client.src.components</summary>
+
+| File | Summary |
+| --- | --- |
+| [CustomButton.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/components/CustomButton.jsx) | Custom button component used throughout the application for user interactions. |
+| [AIPicker.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/components/AIPicker.jsx) | AI-powered component that allows users to generate design suggestions. |
+| [FilePicker.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/components/FilePicker.jsx) | File upload component for adding custom images to the T-shirt design. |
+| [index.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/components/index.js) | Entry point for importing all components at once, simplifying imports in other files. |
+| [ColorPicker.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/components/ColorPicker.jsx) | Color selection component for choosing T-shirt colors and textures. |
+| [Tab.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/components/Tab.jsx) | Tab component for switching between different customization options. |
+
+</details>
+
+<details closed><summary>client.src.config</summary>
+
+| File | Summary |
+| --- | --- |
+| [config.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/config/config.js) | Centralized configuration settings for the application. |
+| [helpers.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/config/helpers.js) | Utility functions for simplifying various logic throughout the application. |
+| [motion.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/config/motion.js) | Motion configurations for animating the 3D model and other visual elements. |
+| [constants.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/config/constants.js) | Constants used throughout the app, such as color codes and API URLs. |
+
+</details>
+
+<details closed><summary>client.src.canvas</summary>
+
+| File | Summary |
+| --- | --- |
+| [Shirt.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/canvas/Shirt.jsx) | Renders the 3D T-shirt model that users can customize with designs and colors. |
+| [index.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/canvas/index.jsx) | Centralized export file for all canvas-related components. |
+| [Backdrop.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/canvas/Backdrop.jsx) | The backdrop of the 3D scene, setting up the environment around the T-shirt. |
+| [CameraRig.jsx](https://github.com/leonardoo210399/t-shirt.git/blob/main/client/src/canvas/CameraRig.jsx) | Manages the camera setup for viewing and interacting with the 3D model. |
+
+</details>
+
+<details closed><summary>server</summary>
+
+| File | Summary |
+| --- | --- |
+| [package.json](https://github.com/leonardoo210399/t-shirt.git/blob/main/server/package.json) | Server-side dependencies and npm scripts. |
+| [index.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/server/index.js) | Entry point for the Node.js backend server, handling requests and serving the API. |
+| [package-lock.json](https://github.com/leonardoo210399/t-shirt.git/blob/main/server/package-lock.json) | Lock file for server-side dependencies, ensuring consistent package versions. |
+
+</details>
+
+<details closed><summary>server.routes</summary>
+
+| File | Summary |
+| --- | --- |
+| [dalle.routes.js](https://github.com/leonardoo210399/t-shirt.git/blob/main/server/routes/dalle.routes.js) | API routes for interacting with the OpenAI DALL·E API, allowing the generation of custom images for T-shirts. |
+
+</details>
+
 
 ---
 
