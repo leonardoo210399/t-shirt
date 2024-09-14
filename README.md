@@ -128,7 +128,7 @@ T-SHIRT.GIT is a web-based platform that allows users to design custom T-shirts 
         ├── package.json
         └── routes
             └── dalle.routes.js
-
+```
 ---
 
 ## 🧩 Modules
